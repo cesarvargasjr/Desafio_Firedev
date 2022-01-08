@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Poppins:wght@600&display=swap');
+
+.App {
+    display: flex;
+    justify-content: center;
+}
+
+.Title {
+  /* Animes mais populares */
+  /* position: absolute;
+  width: 362px;
+  height: 42px;
+  left: 82px;
+  top: 136px; */
+  
+  margin-top: 50px;
+  margin-right: 590px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.Catalago {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*******************************************************/
+
+
+.Card {
+	background: linear-gradient(180deg, #081C42 0%, #0f69aa9e 100%);
+	border: 2px solid #0f69aa9e;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+
+	padding: 60px 30px;
+	width: 100%;
+	width: 300px;
+  height: 300px;
+	border-radius: 15px;
+	margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 10px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.Line {
+	width: 100%;
+	border: 1px solid rgb(218, 218, 218);
+}
+
+/* .card .card-body h1{
+	font-family: Heebo;
+	font-size: 2.6rem;
+	margin-bottom: 10px;
+}
+
+.card .card-body h2{
+	font-family: Raleway;
+	font-size: 1.4rem;
+
+	margin-top: 15px;
+} */
+
+
+/*******************************************************/
+
+
+/* flex-wrap: wrap; */ /*Ajusta as box para ficar em coluna quando se vai ajustando o navegador de tamanho*/

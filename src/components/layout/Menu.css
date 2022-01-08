@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.Menu {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    align-items: center;
+    
+    background: linear-gradient(180deg, #081C42 0%, rgba(15, 105, 170, 0.62) 100%); 
+}
+
+/* .Menu nav {
+    display: flex;
+    flex-grow: 5;
+    align-items: center;
+} */
+
+.Menu ul {
+    list-style: none;
+    padding: 5;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    /* column-gap: 30px; */
+}
+
+.Menu li {
+    display: flex; 
+}
+
+.Menu li a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    text-align: center;
+    padding: 40px;
+    color: #FFFFFF;
+}
+
+.Menu ul li { 
+    display: inline; 
+}
+
+.Menu li a:hover {
+    box-shadow: 0px 4px 5px rgba(36, 31, 31, 0.1);
+}
+
+.Input {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.02);
+    color: #FFFFFF; 
+    /* margin-right: 150px; */  
+    position: relative;
+    top: -3px;
+    width: 241px;
+    height: 30px;
+}
+
+Input:focus { 
+    outline: none !important;
+    border-color: #0f69aa9e;
+    box-shadow: 0 0 8px #0f69aa9e;
+}
+
+.Input:hover {
+    box-shadow: 0px 4px 5px rgba(36, 31, 31, 0.1);
+}
+
+.IconPesquisa {
+    margin-left: 5px;
+    margin-right: 150px;
+    position: relative;
+    top: 4px;
+}
+
+.IconFavoritos {
+    position: relative;
+    top: 5px;
+}
+
+.div {
+    margin-left: auto;
+    margin-right: 80px;   
+}
