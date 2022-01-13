@@ -11,9 +11,9 @@ function App() {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        axios.get("https://alemdocodigo.herokuapp.com/list_posts")
+        axios.get("https://kitsu.io/api/edge/anime")
             .then((response) => {
-                setPosts(response.data.posts)
+                setPosts(response.data.data)
             }).catch(() => {
                 console.log("Erro!")
             })
@@ -26,14 +26,11 @@ function App() {
             </Router>
             <h1 className="Title">Animes mais populares</h1>
             <div className="Catalago">
-                {posts.map((post, key) => {
+                {posts.map((anime, key) => {
                     return (
                         <div className="Card" key={key}>
-                            <div className="Card-body" >
-                                <h1>{post.title}</h1>
-                                <div className="Line"></div>
-                                <h2>{post.content}</h2>
-                            </div>
+                            {/* <h1>{anime.attributes.titles.en}</h1> */}
+                            <img src={anime.attributes.posterImage.small} />
                         </div>
                     )
                 })}
@@ -43,3 +40,48 @@ function App() {
 }
 
 export default App
+
+/* data.map((anime) => alert(anime.attributes.posterImage.tiny)) */
+
+
+/* {posts.map((anime, key) => {
+                    return (
+                        <div className="Card" key={key}>
+                            <div className="Card-body" >
+                                <h1>{anime.attributes.titles.en_us}</h1>
+                                <div className="Line"></div>
+                                <img src={anime.attributes.posterImage.original} />
+                            </div> */
+
+/* https://kitsu.io/api/edge/anime */
+
+/* https://kitsu.io/api/edge/manga */
+
+
+
+
+
+/* return (
+        <div>
+        <Router>
+        <Menu />
+    </Router>
+    <h1 className="Title">Animes mais populares</h1>
+    <div className="Catalago">
+        {posts.map((post, key) => {
+            return (
+                <div className="Card" key={key}>
+                    <div className="Card-body" >
+                        <h1>{post.title}</h1>
+                        <div className="Line"></div>
+                        <h2>{post.content}</h2>
+                    </div>
+                </div>
+            )
+        })}
+    </div>
+</div>
+)
+} */
+
+/* https://alemdocodigo.herokuapp.com/list_posts */

@@ -8,7 +8,7 @@ const Menu = props => (
     <nav className="Menu">
         <ul>
             <li>
-                <a href=""><img src="logoFiredev.svg" /></a>
+                <img src="logoFiredev.svg" />
             </li>
             <li>
                 <a href="">ANIME</a>
