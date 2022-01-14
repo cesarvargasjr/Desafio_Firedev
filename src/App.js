@@ -4,7 +4,6 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import Menu from "./components/layout/Menu";
 import axios from "axios";
 
-/* import api from "./services/api"; */
 
 function App() {
 
@@ -29,7 +28,6 @@ function App() {
                 {posts.map((anime, key) => {
                     return (
                         <div className="Card" key={key}>
-                            {/* <h1>{anime.attributes.titles.en}</h1> */}
                             <img src={anime.attributes.posterImage.small} />
                         </div>
                     )
