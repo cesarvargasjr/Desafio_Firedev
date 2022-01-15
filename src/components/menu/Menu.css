@@ -9,12 +9,6 @@
     background: linear-gradient(180deg, #081C42 0%, rgba(15, 105, 170, 0.62) 100%); 
 }
 
-/* .Menu nav {
-    display: flex;
-    flex-grow: 5;
-    align-items: center;
-} */
-
 .Menu ul {
     list-style: none;
     padding: 5;
@@ -52,15 +46,14 @@
     background: rgba(255, 255, 255, 0.02);
     border-radius: 5px;
     border: 2px solid rgba(255, 255, 255, 0.02);
-    color: #FFFFFF; 
-    /* margin-right: 150px; */  
+    color: #FFFFFF;      
     position: relative;
     top: -3px;
     width: 241px;
     height: 30px;
 }
 
-Input:focus { 
+.Input:focus { 
     outline: none !important;
     border-color: #0f69aa9e;
     box-shadow: 0 0 8px #0f69aa9e;

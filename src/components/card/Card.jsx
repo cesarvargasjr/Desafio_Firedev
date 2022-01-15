@@ -1,14 +1,15 @@
 /* import React, { useEffect, useState } from "react"; */
-import './Card.css';
+/* import './Card.css';
+import Anime from '../../views/anime/Anime';
 
 const Card = props => {
 
     return (
         <div className="Card">
-            <img src={anime.attributes.posterImage.small} />
-            <h2>{anime.attributes.titles.en_jp}</h2>
+            <img src={Anime.attributes.posterImage.small} />
+            <h2>{Anime.attributes.titles.en_jp}</h2>
         </div>
     )
 }
 
-export default Card
+export default Card */

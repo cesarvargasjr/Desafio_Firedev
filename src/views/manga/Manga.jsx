@@ -16,8 +16,8 @@ const Manga = props => {
     }, [])
 
     return (
-        <div /* className="App" */>
-            <h1 className="Title">Mangas mais populares</h1>
+        <div>
+            <h1>Mangas mais populares</h1>
             <div className="Content">
                 {posts.map((manga, key) => {
                     return (

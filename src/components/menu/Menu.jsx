@@ -19,7 +19,7 @@ const Menu = props => (
         </ul>
         <div className="div">
             <input type="text" className="Input" />
-            <a href="" className="IconPesquisa">
+            <a className="IconPesquisa">
                 <img src="iconPesquisa.svg" />
             </a>
             <Link to="/Favoritos" className="IconFavoritos" >

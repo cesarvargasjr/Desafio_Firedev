@@ -7,8 +7,9 @@ import Manga from '../../views/manga/Manga'
 import Favoritos from '../../views/favoritos/Favoritos'
 
 const Content = props => (
-    <main /* className="Content" */>
-        <Switch>  
+
+    <div className="Content">
+        <Switch>
             <Route path="/Anime">
                 <Anime />
             </Route>
@@ -19,7 +20,7 @@ const Content = props => (
                 <Favoritos />
             </Route>
         </Switch>
-    </main>
+    </div>
 )
 
 export default Content

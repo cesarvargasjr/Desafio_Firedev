@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import './Anime.css'
+import './Anime.css';
+
+/* import Card from "../../components/card/Card"; */
 
 const Anime = props => {
 
@@ -16,20 +18,21 @@ const Anime = props => {
     }, [])
 
 
-    /* Favoritar algum card */
-    /* const favoritar = () => {
+    /* FAVORITAR CARD */
+    const favoritar = () => {
         alert(`FAVORITO`);
-        {<img src="logoFavoritos.svg" />}
-      }; onClick={favoritar}*/
+        {/* <img src="favoritarCard.svg" /> */}
+    };  
+
 
     return (
-        <div /* className="App" */>
-            <h1 className="Title">Animes mais populares</h1>
+        <div>
+            <h1>Animes mais populares</h1>
             <div className="Content">
                 {posts.map((anime, key) => {
                     return (
-                        <div className="Card"  key={key}>
-                            <img src={anime.attributes.posterImage.small} />
+                        <div className="Card" key={key}>
+                            <img onClick={() => favoritar()} src={anime.attributes.posterImage.small} />
                             <h2>{anime.attributes.titles.en_jp}</h2>
                         </div>
                     )
