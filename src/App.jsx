@@ -16,42 +16,6 @@ const App = props => {
 
 export default App
 
-
-/* function App() {
-
-    const [posts, setPosts] = useState([]);
-
-    useEffect(() => {
-        axios.get("https://kitsu.io/api/edge/anime")
-            .then((response) => {
-                setPosts(response.data.data)
-            }).catch(() => {
-                console.log("Erro!")
-            })
-    }, [])
-
-    return (
-        <div>
-            <Router>
-                <Menu />
-            </Router>
-            <h1 className="Title">Animes mais populares</h1>
-            <div className="Catalago">
-                {posts.map((anime, key) => {
-                    return (
-                        <div className="Card" key={key}>
-                            <img src={anime.attributes.posterImage.small} />
-                        </div>
-                    )
-                })}
-            </div>
-        </div>
-    )
-}
-
-export default App */
-
-
 /* https://kitsu.io/api/edge/anime */
 
 /* https://kitsu.io/api/edge/manga */
