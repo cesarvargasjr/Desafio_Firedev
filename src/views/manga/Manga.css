@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Poppins:wght@600&display=swap');
+
+.Card {
+    padding: 60px 30px;
+    width: 100%;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 1px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-wrap: wrap;
+}
+
+.Card h2 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.Title {
+    /* Animes mais populares */
+    /* margin-top: 50px; */
+    margin-right: 1400px;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
