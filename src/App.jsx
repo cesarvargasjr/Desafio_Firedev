@@ -3,14 +3,14 @@ import Menu from "./components/menu/Menu";
 import Content from "./components/content/Content";
 
 const App = props => {
-
+    
     return (
-            <div>
-                <Router>
-                    <Menu />
-                    <Content />
-                </Router>
-            </div>
+        <div>
+            <Router>
+                <Menu />
+                <Content />
+            </Router>
+        </div>
     )
 }
 

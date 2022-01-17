@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import './Anime.css';
 
-/* import Card from "../../components/card/Card"; */
+import Modal from "../../components/modal/Modal";
 
 const Anime = props => {
+
+    const [modalVisible, setModalVisible] = useState(false);
 
     const [posts, setPosts] = useState([]);
 
@@ -17,14 +19,6 @@ const Anime = props => {
             })
     }, [])
 
-
-    /* FAVORITAR CARD */
-    const favoritar = () => {
-        alert(`FAVORITO`);
-        {/* <img src="favoritarCard.svg" /> */}
-    };  
-
-
     return (
         <div>
             <h1>Animes mais populares</h1>
@@ -32,7 +26,16 @@ const Anime = props => {
                 {posts.map((anime, key) => {
                     return (
                         <div className="Card" key={key}>
-                            <img onClick={() => favoritar()} src={anime.attributes.posterImage.small} />
+                            <img onClick={() => setModalVisible(true)} src={anime.attributes.posterImage.small} />
+                            {modalVisible ? (
+                                <Modal onClose={() => setModalVisible(false)}>
+                                    <h4>TESTE CONTEUDO</h4>
+                                    <p>Um caçador de vampiros luta para salvar 
+                                        uma cidade sitiada por um exército de criaturas 
+                                        controladas pelo próprio Drácula. Inspirado 
+                                        no clássico videogame.</p>
+                                </Modal>
+                            ) : null}
                             <h2>{anime.attributes.titles.en_jp}</h2>
                         </div>
                     )
@@ -43,3 +46,9 @@ const Anime = props => {
 }
 
 export default Anime
+
+
+/* FAVORITAR CARD */
+/* const favoritar = () => {
+    alert(`FAVORITO`);
+};   */

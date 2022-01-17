@@ -1,5 +1,5 @@
-/* import React, { useEffect, useState } from "react"; */
-/* import './Card.css';
+/* import React from 'react'
+import './Card.css';
 import Anime from '../../views/anime/Anime';
 
 const Card = props => {
