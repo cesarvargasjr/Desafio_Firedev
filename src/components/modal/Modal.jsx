@@ -10,7 +10,7 @@ const Modal = ({ id = 'modal', onClose = () => { }, children }) => {
     return (
         <div id={id} className="Modal" onClick={hadleOutsideClick}>
             <div className="Container">
-                <button className="FavoritarCard" onClick={onClose} src="iconHeart.svg"></button>
+                <img className="FavoritarCard" onClick={onClose} src="iconHeart.svg" />
                 <div className="Description">
                     <h4 className="Sinopse">Sinopse</h4>
                     {/* <h4 className="Posicao">Posição</h4> */}

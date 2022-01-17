@@ -31,7 +31,8 @@ const Anime = props => {
                                 <Modal onClose={() => setModalVisible(false)}>
                                     <h3>{anime.attributes.titles.en_jp}</h3>
                                     <p>{anime.attributes.synopsis}</p>
-                                    <img src={anime.attributes.posterImage.tiny} />
+                                    
+                                    {/* <img src={anime.attributes.posterImage.tiny} /> */}
                                 </Modal>
                             ) : null}
                             <h2>{anime.attributes.titles.en_jp}</h2>
