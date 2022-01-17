@@ -29,11 +29,9 @@ const Anime = props => {
                             <img onClick={() => setModalVisible(true)} src={anime.attributes.posterImage.small} />
                             {modalVisible ? (
                                 <Modal onClose={() => setModalVisible(false)}>
-                                    <h4>TESTE CONTEUDO</h4>
-                                    <p>Um caçador de vampiros luta para salvar 
-                                        uma cidade sitiada por um exército de criaturas 
-                                        controladas pelo próprio Drácula. Inspirado 
-                                        no clássico videogame.</p>
+                                    <h3>{anime.attributes.titles.en_jp}</h3>
+                                    <p>{anime.attributes.synopsis}</p>
+                                    <img src={anime.attributes.posterImage.tiny} />
                                 </Modal>
                             ) : null}
                             <h2>{anime.attributes.titles.en_jp}</h2>
