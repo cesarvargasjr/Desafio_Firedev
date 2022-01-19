@@ -31,8 +31,6 @@ const Anime = props => {
                                 <Modal onClose={() => setModalVisible(false)}>
                                     <h3>{anime.attributes.titles.en_jp}</h3>
                                     <p>{anime.attributes.synopsis}</p>
-                                    
-                                    {/* <img src={anime.attributes.posterImage.tiny} /> */}
                                 </Modal>
                             ) : null}
                             <h2>{anime.attributes.titles.en_jp}</h2>
@@ -51,3 +49,29 @@ export default Anime
 /* const favoritar = () => {
     alert(`FAVORITO`);
 };   */
+
+
+/* return (
+        <div>
+            <h1>Animes mais populares</h1>
+            <div className="Content">
+                {posts.map((anime, key) => {
+                    return (
+                        <div className="Card" key={key}>
+                            <img onClick={() => setModalVisible(true)} src={anime.attributes.posterImage.small} />
+                            {modalVisible ? (
+                                <Modal onClose={() => setModalVisible(false)}>
+                                    <h3>{anime.attributes.titles.en_jp}</h3>
+                                    <p>{anime.attributes.synopsis}</p>
+
+                                    <img src={anime.attributes.posterImage.tiny} />
+                                    </Modal>
+                                    ) : null}
+                                    <h2>{anime.attributes.titles.en_jp}</h2>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+            )
+        } */

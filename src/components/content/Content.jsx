@@ -21,6 +21,7 @@ const Content = props => (
             </Route>
         </Switch>
     </div>
+
 )
 
 export default Content
