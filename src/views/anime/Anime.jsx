@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import './Anime.css';
 
 import Modal from "../../components/modal/Modal";
+import Card from "../../components/card/Card";
+import Styles from "./Anime.module.css";
 
 const Anime = props => {
 
     const [modalVisible, setModalVisible] = useState(false);
+    const [animeData, setAnimeData] = useState({});
 
     const [posts, setPosts] = useState([]);
 
@@ -19,59 +21,42 @@ const Anime = props => {
             })
     }, [])
 
+    const triggerModal = (anime) => {
+        setModalVisible(true)
+        setAnimeData(anime)
+    }
+
+    const closeModal = () => {
+        setModalVisible(false)
+    }
+
     return (
         <div>
-            <h1>Animes mais populares</h1>
-            <div className="Content">
+            <h1 className={Styles.TitleAnime}>Animes mais populares</h1>
+            <div className={Styles.Anime}>
                 {posts.map((anime, key) => {
                     return (
-                        <div className="Card" key={key}>
-                            <img onClick={() => setModalVisible(true)} src={anime.attributes.posterImage.small} />
-                            {modalVisible ? (
-                                <Modal onClose={() => setModalVisible(false)}>
-                                    <h3>{anime.attributes.titles.en_jp}</h3>
-                                    <p>{anime.attributes.synopsis}</p>
-                                </Modal>
-                            ) : null}
-                            <h2>{anime.attributes.titles.en_jp}</h2>
-                        </div>
+                        <Card
+                            img={anime.attributes.posterImage.tiny}
+                            title={anime.attributes.titles.en_jp}
+                            onClick={() => triggerModal(anime)}
+                        />
                     )
                 })}
             </div>
+            {modalVisible ? (
+                <Modal 
+                    onClose={() => closeModal()}
+                    img={animeData.attributes.posterImage.small}
+                    sinopse={animeData.attributes.synopsis}
+                    title={animeData.attributes.titles.en_jp}
+                    position={animeData.attributes.averageRating}
+                    avaliacao={animeData.attributes.popularityRank}
+                    capitulos={animeData.attributes.episodeCount}
+                />
+            ) : null}
         </div>
     )
 }
 
 export default Anime
-
-
-/* FAVORITAR CARD */
-/* const favoritar = () => {
-    alert(`FAVORITO`);
-};   */
-
-
-/* return (
-        <div>
-            <h1>Animes mais populares</h1>
-            <div className="Content">
-                {posts.map((anime, key) => {
-                    return (
-                        <div className="Card" key={key}>
-                            <img onClick={() => setModalVisible(true)} src={anime.attributes.posterImage.small} />
-                            {modalVisible ? (
-                                <Modal onClose={() => setModalVisible(false)}>
-                                    <h3>{anime.attributes.titles.en_jp}</h3>
-                                    <p>{anime.attributes.synopsis}</p>
-
-                                    <img src={anime.attributes.posterImage.tiny} />
-                                    </Modal>
-                                    ) : null}
-                                    <h2>{anime.attributes.titles.en_jp}</h2>
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>
-            )
-        } */

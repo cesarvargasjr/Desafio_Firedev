@@ -1,14 +1,14 @@
 import { Switch, Route } from 'react-router-dom'
 import React from 'react'
 
-import './Content.css'
 import Anime from '../../views/anime/Anime'
 import Manga from '../../views/manga/Manga'
 import Favoritos from '../../views/favoritos/Favoritos'
+import ResultSearch from '../resultSearch/ResultSearch'
 
 const Content = props => (
 
-    <div className="Content">
+    <div>
         <Switch>
             <Route path="/Anime">
                 <Anime />
@@ -18,6 +18,9 @@ const Content = props => (
             </Route>
             <Route path="/Favoritos">
                 <Favoritos />
+            </Route>
+            <Route path="ResultSearch">
+                <ResultSearch />
             </Route>
         </Switch>
     </div>

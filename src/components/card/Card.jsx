@@ -1,15 +1,14 @@
-/* import React from 'react'
-import './Card.css';
-import Anime from '../../views/anime/Anime';
+import React from 'react'
+import Styles from './Card.module.css';
 
 const Card = props => {
 
     return (
-        <div className="Card">
-            <img src={Anime.attributes.posterImage.small} />
-            <h2>{Anime.attributes.titles.en_jp}</h2>
+        <div className={Styles.Card} onClick={props.onClick}>
+            <img className={Styles.Img} src={props.img} />
+            <h2 className={Styles.Title}>{props.title}</h2>
         </div>
     )
 }
 
-export default Card */
+export default Card

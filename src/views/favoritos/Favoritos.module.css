@@ -1,0 +1,11 @@
+.Favoritos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.TitleFavoritos {
+    margin-top: 50px;
+    font-family: DM Sans;
+    margin-left: 40px;
+}
