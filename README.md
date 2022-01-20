@@ -1,4 +1,4 @@
-## Descrição da minha resolução do desafio
+### Descrição da minha resolução do desafio
 
 Inicialmente eu organizei o projeto por componentes e views, comecei pelo componente "Menu", e para definir as funcionalidades dos botões eu utilizei o "react-router-dom" no componente "Content" para mostrar o conteúdo desejado após clicar em um dos botões. Neste meu componente "Content" eu chamei as minha views "Animes, Mangas e Favoritos" para exibir o conteúdo de cada um na tela.
 
