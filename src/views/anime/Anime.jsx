@@ -50,8 +50,8 @@ const Anime = props => {
                     img={animeData.attributes.posterImage.small}
                     sinopse={animeData.attributes.synopsis}
                     title={animeData.attributes.titles.en_jp}
-                    position={animeData.attributes.averageRating}
-                    avaliacao={animeData.attributes.popularityRank}
+                    position={animeData.attributes.popularityRank}
+                    avaliacao={animeData.attributes.averageRating}
                     capitulos={animeData.attributes.episodeCount}
                 />
             ) : null}

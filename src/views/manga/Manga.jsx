@@ -50,9 +50,9 @@ const Manga = props => {
                     img={mangaData.attributes.posterImage.small}
                     sinopse={mangaData.attributes.synopsis}
                     title={mangaData.attributes.titles.en_jp}
-                    position={mangaData.attributes.averageRating}
-                    avaliacao={mangaData.attributes.popularityRank}
-                    capitulos={mangaData.attributes.episodeCount}
+                    position={mangaData.attributes.popularityRank}
+                    avaliacao={mangaData.attributes.averageRating}
+                    capitulos={mangaData.attributes.chapterCount}
                 />
             ) : null}
         </div>
