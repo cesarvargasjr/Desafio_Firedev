@@ -4,7 +4,6 @@ import React from 'react'
 import Anime from '../../views/anime/Anime'
 import Manga from '../../views/manga/Manga'
 import Favoritos from '../../views/favoritos/Favoritos'
-import ResultSearch from '../resultSearch/ResultSearch'
 
 const Content = props => (
 
@@ -18,9 +17,6 @@ const Content = props => (
             </Route>
             <Route path="/Favoritos">
                 <Favoritos />
-            </Route>
-            <Route path="ResultSearch">
-                <ResultSearch />
             </Route>
         </Switch>
     </div>

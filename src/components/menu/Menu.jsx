@@ -2,7 +2,6 @@ import React from 'react'
 import './Menu.css'
 
 import { Link } from 'react-router-dom'
-import FilterSearch from '../filterSearch/FilterSearch'
 
 const Menu = props => (
 
@@ -19,7 +18,6 @@ const Menu = props => (
             </li>
         </ul>
         <div className="div">
-            <FilterSearch />
             <a className="IconSearch">
                 <img src="iconSearch.svg" />
             </a>
@@ -31,5 +29,3 @@ const Menu = props => (
 )
 
 export default Menu
-
-/* <input type="text" className="Input" /> */
