@@ -18,7 +18,7 @@ Layout do projeto no [Figma](https://www.figma.com/file/DoHcQ1PKnpYoj6kAYiKI2Q/T
 
 Execute em seu terminal os seguintes comandos:
 
-### `init i`
+### `npm i`
 Para instalar o "Node_Modules".
 
 ### `npm start`
