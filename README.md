@@ -22,7 +22,7 @@ Execute em seu terminal os seguintes comandos:
 Para instalar o "Node_Modules".
 
 ### `npm start`
-Para iniciar o projeto, depois abra [http://localhost:3000](http://localhost:3000) para visualizar em seu navegador o projeto.
+Após executar os comandos abra [http://localhost:3000](http://localhost:3000) para visualizar em seu navegador o projeto.
 
 
 ## Imagens final do projeto
