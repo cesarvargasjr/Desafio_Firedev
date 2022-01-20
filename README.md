@@ -7,7 +7,7 @@ Realizei o consumo da minha API através do "axios" e em views separadas, devido
 
 ## Para executar o projeto
 
-Para inciar o projeto execute em seu terminal os seguintes comandos:
+Execute em seu terminal os seguintes comandos:
 
 ### `init i`
 Para instalar o "Node_Modules".
