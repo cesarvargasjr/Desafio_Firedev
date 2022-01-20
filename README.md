@@ -6,15 +6,17 @@ Realizei o consumo da API [Kitsu](https://kitsu.docs.apiary.io) através do "axi
 
 Layout do projeto no [Figma](https://www.figma.com/file/DoHcQ1PKnpYoj6kAYiKI2Q/Teste?node-id=0%3A1).
 
+##
 
-## Tecnologias
+### Tecnologias
 
 - React
 - JSX
 - CSS Modularizado
 
+##
 
-## Para executar o projeto
+### Para executar o projeto
 
 Execute em seu terminal os seguintes comandos:
 
@@ -24,6 +26,7 @@ Para instalar o "Node_Modules".
 ### `npm start`
 Após executar os comandos abra [http://localhost:3000](http://localhost:3000) para visualizar em seu navegador o projeto.
 
+##
 
 ## Imagens final do projeto
 
