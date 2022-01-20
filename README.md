@@ -14,3 +14,10 @@ Para instalar o "Node_Modules".
 
 ### `npm start`
 Para iniciar o projeto, depois abra [http://localhost:3000](http://localhost:3000) para visualizar em seu navegador o projeto.
+
+
+## Imagens do projeto
+
+![image](https://user-images.githubusercontent.com/72532360/150251057-3a4d74ff-3cc1-4d0d-abf8-2dc306aea26e.png)
+
+![image](https://user-images.githubusercontent.com/72532360/150251248-2aba7999-7241-4ce3-a946-be3441bef133.png)
