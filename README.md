@@ -28,7 +28,7 @@ Após executar os comandos abra [http://localhost:3000](http://localhost:3000) p
 
 ##
 
-### Imagens final do projeto
+### Printscreen do projeto
 
 ![image](https://user-images.githubusercontent.com/72532360/150251057-3a4d74ff-3cc1-4d0d-abf8-2dc306aea26e.png)
 
